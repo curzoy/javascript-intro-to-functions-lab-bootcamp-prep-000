@@ -39,7 +39,9 @@ function logWhisper(string){
 }
 
 function sayHiToGrandma(string) {
-    expect(sayHiToGrandma('hello')).toEqual("I can't hear you!")
+  
+if(expect(sayHiToGrandma('hello')){
+  "I can't hear you!"
   }
 
   it('returns "YES INDEED!" if `string` is uppercase', function() {
