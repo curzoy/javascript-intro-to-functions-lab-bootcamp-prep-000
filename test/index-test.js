@@ -27,17 +27,16 @@ function logShout(string){
   
 }
 
-describe('logWhisper(string)', function() {
-  it('calls console.log() its one argument in all lowercase', function() {
+function logWhisper(string){
     const spy = expect.spyOn(console, 'log').andCallThrough()
 
-    logWhisper('HELLO')
+    logWhisper('HELLO').toLowerCase()
 
     expect(spy).toHaveBeenCalledWith('hello')
 
     console.log.restore()
-  })
-})
+
+}
 
 describe('sayHiToGrandma(string)', function() {
   it('returns "I can\'t hear you!" if `string` is lowercase', function() {
