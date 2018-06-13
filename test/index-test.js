@@ -1,7 +1,7 @@
 string = "hello"
  function shout(string){
  return
- hello.toUpperCase() 
+ string.toUpperCase() 
 }
 describe('whisper(string)', function() {
   it('receives one argument and returns it in all lowercase', function() {
